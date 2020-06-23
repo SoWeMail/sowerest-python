@@ -112,11 +112,11 @@ License
    :target: https://travis-ci.com/sowemail/sowerest-python
 .. |Codecov branch| image:: https://img.shields.io/codecov/c/github/sowemail/sowerest-python/master.svg?style=flat-square&label=Codecov+Coverage
    :target: https://codecov.io/gh/sowemail/sowerest-python
-.. |Code Climate| image:: https://codeclimate.com/github/sowemail/sowerest-python/badges/gpa.svg
-   :target: https://codeclimate.com/github/sowemail/sowerest-python
+.. |Code Climate| image:: https://codeclimate.com/github/SoWeMail/sowerest-python/badges/gpa.svg
+   :target: https://codeclimate.com/github/SoWeMail/sowerest-python
 .. |Python Versions| image:: https://img.shields.io/pypi/pyversions/sowerest.svg
    :target: https://pypi.org/project/sowerest
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/sowerest.svg
    :target: https://pypi.org/project/sowerest
 .. |MIT licensed| image:: https://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://github.com/sowemail/sowerest/blob/master/LICENSE.md
+   :target: https://github.com/SoWeMail/sowerest-python/blob/master/LICENSE
