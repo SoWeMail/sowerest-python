@@ -2,10 +2,10 @@ dist: xenial
 language: python
 cache: pip
 python:
-  #- '3.4'
-  #- '3.5'
-  #- '3.6'
-  #- '3.7'
+  - '3.4'
+  - '3.5'
+  - '3.6'
+  - '3.7'
   - '3.8'
 before_install:
   - pip install pycodestyle coverage codecov
@@ -31,5 +31,5 @@ deploy:
   on:
     branch: master
     condition: "$TRAVIS_TEST_RESULT = 0"
-    #tags: true
+    tags: true
     python: '3.8'
