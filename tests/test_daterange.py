@@ -8,7 +8,7 @@ class DateRangeTest(unittest.TestCase):
         self.openlicensefile = os.path.join(
                                 os.path.dirname(__file__),
                                 '../LICENSE')
-        self.pattern = 'Copyright (C) %s, SeWeMail, Inc. <support@sowemail.com>' % (
+        self.pattern = 'Copyright (C) %s, SeWeMail, Inc. <opensource@sowemail.com>' % (
                         time.strftime("%Y"))
         fh = open(self.openlicensefile)
         self.license_file = fh.read()
