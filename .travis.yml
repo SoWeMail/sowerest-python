@@ -1,0 +1,34 @@
+dist: xenial
+language: python
+cache: pip
+python:
+  - '3.4'
+  - '3.5'
+  - '3.6'
+  - '3.7'
+  - '3.8'
+before_install:
+  - pip install pycodestyle coverage codecov
+install:
+  - pip install virtualenv --upgrade
+  - make install
+  - make test-install
+script:
+  - pycodestyle --exclude=venv
+  - coverage run -m unittest discover
+after_script:
+  - codecov
+  - make test
+  - coverage run tests/test_unit.py
+after_success:
+  - codecov
+deploy:
+  provider: pypi
+  user: __token__
+  password: $PYPI_TOKEN
+  skip_cleanup: true
+  on:
+    branch: master
+    condition: "$TRAVIS_TEST_RESULT = 0"
+    tags: true
+    python: '3.7'
