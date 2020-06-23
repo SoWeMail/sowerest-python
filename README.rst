@@ -108,8 +108,8 @@ License
 .. _python-http-client: https://github.com/sendgrid/python-http-client
 .. _The MIT License (MIT): https://github.com/sowemail/sowerest-python/blob/master/LICENSE
 
-.. |Build Status| image:: https://travis-ci.org/sowemail/sowerest-python.svg?branch=master
-   :target: https://travis-ci.org/sowemail/sowerest-python
+.. |Build Status| image:: https://travis-ci.com/sowemail/sowerest-python.svg?branch=master
+   :target: https://travis-ci.com/sowemail/sowerest-python
 .. |Codecov branch| image:: https://img.shields.io/codecov/c/github/sowemail/sowerest-python/master.svg?style=flat-square&label=Codecov+Coverage
    :target: https://codecov.io/gh/sowemail/sowerest-python
 .. |Code Climate| image:: https://codeclimate.com/github/sowemail/sowerest-python/badges/gpa.svg
