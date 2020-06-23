@@ -69,7 +69,6 @@ venv
 venv?
 .python-version
 cleanup.sh
-*_example.py
 .idea
 README.txt
 sowerest/VERSION.txt
