@@ -2,15 +2,14 @@ dist: xenial
 language: python
 cache: pip
 python:
-  #- '3.4'
-  #- '3.5'
-  #- '3.6'
-  #- '3.7'
+  - '3.4'
+  - '3.5'
+  - '3.6'
+  - '3.7'
   - '3.8'
 before_install:
   - pip install pycodestyle coverage codecov
 install:
-  - echo $PYPI_TOKEN
   - pip install virtualenv --upgrade
   - make install
   - make test-install
@@ -27,7 +26,7 @@ deploy:
   provider: pypi
   user: __token__
   password:
-    secure: $PYPI_TOKEN
+    secure: pypi-AgEIcHlwaS5vcmcCJDU3NTEyNDRmLWZhNTAtNDNhMi04ZTFiLWMwYmU0YWU0YmZkOQACOXsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJzb3dlcmVzdCJdfSwgInZlcnNpb24iOiAxfQAABiApaJDuDSU6Z2NhqbbiweuqaEDnkI7dP2mAjAqa_qBmLg
   skip_cleanup: true
   on:
     branch: master
