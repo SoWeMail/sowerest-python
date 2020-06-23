@@ -1,5 +1,5 @@
 # Mac stuff
-.DS_Store/
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -65,8 +65,8 @@ target/
 .ipynb_checkpoints
 
 .env
-.venv/
-.venv3/
+venv
+venv?
 .python-version
 cleanup.sh
 *_example.py

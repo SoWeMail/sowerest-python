@@ -25,10 +25,11 @@ after_success:
 deploy:
   provider: pypi
   user: __token__
-  password: $PYPI_TOKEN
+  password:
+    secure: NlEGtgvLBX1adsgIiZlLam3+gK95PU3vuwcpZyZILA8u5bOINopFVfQPH6blPFfL/V+ht0tjWjI4/kuOdT6N2H/PjYy2FqWTyi8pXk8wtuokyVx3rixviI3rr43N5ksCpgeFOxdvxBCcva4rmELavjy7o5+CjSnWk/Rn/Wgb9DzAIDVqGRcT6c/frmnsCtvJ7EIgr9Vp/dRxy3KY+a6wczQ60kPU2Q4q48KkFL5wl1swnXG+EnP4svUk+Fb8low3RTBH+XaZ9aywyfD2w1/EyoJdS35kh2jdBvoNqv3iX7ntRCDnB08aU4OdKrDVWPoXzvX6GuMaTeWuIoKHgER561ii57QAeJTWtUUKvqHFdTPcZQ62T6FKEc0+2XUUtMY8PdztzHS3w8OAxqtcPBeyP/YS81VqqcRoBZFivfOuo6h15hWoEUvcrNFVhTCl3daLcleY4fJmpCgBdq4XjL3GGHDESCr6tkshBT/WIqpNm/NpdfWCCmbT+m7ZlmKL+guxK3H+XgSeudQt4FSel++/TOQIABtRTOQXPZUUzFHeqdYtra0gPR69clH1F6k/SaVGLShhuf4Iv9TyqFke+05Z5TNnDuRQKxifpgDRfL5JeHJcrm765GewsvlctAlVCYQNdomp+Co1+yD85BXs7p6JI8EV465udCNf8E4cJY9Gb3Y=
   skip_cleanup: true
   on:
     branch: master
     condition: "$TRAVIS_TEST_RESULT = 0"
     tags: true
-    python: '3.7'
+    python: '3.8'

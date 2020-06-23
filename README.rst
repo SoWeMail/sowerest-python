@@ -108,13 +108,13 @@ License
 .. _python-http-client: https://github.com/sendgrid/python-http-client
 .. _The MIT License (MIT): https://github.com/sowerest/sowerest-http-client/blob/master/LICENSE
 
-.. |Build Status| image:: https://travis-ci.org/sowerest/python-http-client.svg?branch=master
-   :target: https://travis-ci.org/sowerest/python-http-client
+.. |Build Status| image:: https://travis-ci.org/sowerest/sowerest-http-client.svg?branch=master
+   :target: https://travis-ci.org/sowerest/sowerest-http-client
 .. |Codecov branch| image:: https://img.shields.io/codecov/c/github/sowerest/sowerest-http-client/master.svg?style=flat-square&label=Codecov+Coverage
-   :target: https://codecov.io/gh/sowerest/python-http-client
+   :target: https://codecov.io/gh/sowerest/sowerest-http-client
 .. |Code Climate| image:: https://codeclimate.com/github/sowerest/sowerest-http-client/badges/gpa.svg
-   :target: https://codeclimate.com/github/sowerest/python-http-client
-.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/python-http-client.svg
+   :target: https://codeclimate.com/github/sowerest/sowerest-http-client
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/sowerest-http-client.svg
    :target: https://pypi.org/project/sowerest-http-client
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/sowerest-http-client.svg
    :target: https://pypi.org/project/sowerest-http-client
