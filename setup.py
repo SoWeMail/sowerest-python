@@ -16,17 +16,17 @@ with io.open(version_path, encoding='utf-8') as version_file:
 base_url = 'https://github.com/sowemail/'
 
 copy_file(version_path,
-          os.path.join(dir_path, 'sowerest_http_client', 'VERSION.txt'),
+          os.path.join(dir_path, 'sowerest', 'VERSION.txt'),
           verbose=False)
 
 setup(
-    name='sowerest_http_client',
+    name='sowerest',
     version=version,
     author='Fourat Zouari',
     author_email='fourat@gmail.com',
-    url='{}sowerest-http-client'.format(base_url),
-    download_url='{}sowerest-http-client/tarball/{}'.format(base_url, version),
-    packages=['sowerest_http_client'],
+    url='{}sowerest'.format(base_url),
+    download_url='{}sowerest/tarball/{}'.format(base_url, version),
+    packages=['sowerest'],
     include_package_data=True,
     license='MIT',
     description='HTTP REST client, simplified for SeWeMail API',

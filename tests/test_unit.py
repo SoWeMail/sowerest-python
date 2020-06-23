@@ -1,8 +1,8 @@
 import pickle
 import unittest
 
-from sowerest_http_client.client import Client
-from sowerest_http_client.exceptions import (
+from sowerest.client import Client
+from sowerest.exceptions import (
     BadRequestsError, HTTPError,
     NotFoundError,
     ServiceUnavailableError,
@@ -112,14 +112,14 @@ class TestClient(unittest.TestCase):
         built_url = self.client._build_url(query_params)
         self.assertEqual(built_url, url)
 
-    @mock.patch('sowerest_http_client.client.Client._make_request')
+    @mock.patch('sowerest.client.Client._make_request')
     def test__urllib_headers(self, maker):
         self.client._update_headers({'X-test': 'Test'})
         self.client.get()
         request = maker.call_args[0][1]
         self.assertIn('X-test', request.headers)
 
-    @mock.patch('sowerest_http_client.client.Client._make_request')
+    @mock.patch('sowerest.client.Client._make_request')
     def test__urllib_method(self, maker):
         self.client.delete()
         request = maker.call_args[0][1]

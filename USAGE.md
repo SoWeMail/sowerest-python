@@ -1,7 +1,7 @@
 # INITIALIZATION
 
 ```python
-import sowerest_http_client
+import sowerest
 
 host = "https://api.sowemail.com"
 api_key = os.environ.get('SOWEMAIL_API_KEY')
@@ -9,7 +9,7 @@ request_headers = {
     "Authorization": 'Bearer {0}'.format(api_key)
 }
 version = 1
-client = sowerest_http_client.Client(
+client = sowerest.Client(
     host=host,
     request_headers=request_headers,
     version=version

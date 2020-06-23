@@ -2,7 +2,7 @@
 
 **Quickly and easily access any RESTful or RESTful-like API.**
 
-If you are looking for the SoWeMail API client library, please see `this repo`_.
+If you are looking for the sowemail API client library, please see `this repo`_.
 
 Table of Contents
 =================
@@ -31,18 +31,18 @@ Install Package
 
 .. code:: bash
 
-    pip install sowerest_http_client
+    pip install sowerest
 
 or
 
 .. code:: bash
 
-    easy_install sowerest_http_client
+    easy_install sowerest
 
 API Key
 -------
 
-Store your SoWeMail API key in a ``.env`` file.
+Store your sowemail API key in a ``.env`` file.
 
 .. code:: bash
 
@@ -59,7 +59,7 @@ Here is a quick example:
 
 .. code:: python
 
-    import sowerest_http_client
+    import sowerest
 
     global_headers = {"Authorization": "Bearer XXXXXXX"}
     client = Client(host='base_url', request_headers=global_headers)
@@ -72,7 +72,7 @@ Here is a quick example:
 
 .. code:: python
 
-    import sowerest_http_client
+    import sowerest
 
     global_headers = {"Authorization": "Bearer XXXXXXX"}
     client = Client(host='base_url', request_headers=global_headers)
@@ -101,22 +101,22 @@ License
 
 `The MIT License (MIT)`_
 
-.. _this repo: https://github.com/sowemail/sowemail-python
-.. _Example Code: https://github.com/sowerest/sowerest-http-client/tree/master/examples
+.. _this repo: https://github.com/sowemail/sowerest-python
+.. _Example Code: https://github.com/sowemail/sowerest-python/tree/master/examples
 .. _birdy: https://github.com/inueni/birdy
 .. _universalclient: https://github.com/dgreisen/universalclient
 .. _python-http-client: https://github.com/sendgrid/python-http-client
-.. _The MIT License (MIT): https://github.com/sowerest/sowerest-http-client/blob/master/LICENSE
+.. _The MIT License (MIT): https://github.com/sowemail/sowerest-python/blob/master/LICENSE
 
-.. |Build Status| image:: https://travis-ci.org/sowerest/sowerest-http-client.svg?branch=master
-   :target: https://travis-ci.org/sowerest/sowerest-http-client
-.. |Codecov branch| image:: https://img.shields.io/codecov/c/github/sowerest/sowerest-http-client/master.svg?style=flat-square&label=Codecov+Coverage
-   :target: https://codecov.io/gh/sowerest/sowerest-http-client
-.. |Code Climate| image:: https://codeclimate.com/github/sowerest/sowerest-http-client/badges/gpa.svg
-   :target: https://codeclimate.com/github/sowerest/sowerest-http-client
-.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/sowerest-http-client.svg
-   :target: https://pypi.org/project/sowerest-http-client
-.. |PyPI Version| image:: https://img.shields.io/pypi/v/sowerest-http-client.svg
-   :target: https://pypi.org/project/sowerest-http-client
+.. |Build Status| image:: https://travis-ci.org/sowemail/sowerest-python.svg?branch=master
+   :target: https://travis-ci.org/sowemail/sowerest-python
+.. |Codecov branch| image:: https://img.shields.io/codecov/c/github/sowemail/sowerest-python/master.svg?style=flat-square&label=Codecov+Coverage
+   :target: https://codecov.io/gh/sowemail/sowerest-python
+.. |Code Climate| image:: https://codeclimate.com/github/sowemail/sowerest-python/badges/gpa.svg
+   :target: https://codeclimate.com/github/sowemail/sowerest-python
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/sowerest.svg
+   :target: https://pypi.org/project/sowerest
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/sowerest.svg
+   :target: https://pypi.org/project/sowerest
 .. |MIT licensed| image:: https://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://github.com/sowerest/sowerest-http-client/blob/master/LICENSE.md
+   :target: https://github.com/sowemail/sowerest/blob/master/LICENSE.md
