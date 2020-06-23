@@ -26,7 +26,7 @@ deploy:
   provider: pypi
   user: __token__
   password:
-    secure: pypi-AgEIcHlwaS5vcmcCJGY3YmE2MjZkLTllZTUtNDYzMS1hNDE5LTNhYmQwZmNjZTg3MwACOXsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJzb3dlcmVzdCJdfSwgInZlcnNpb24iOiAxfQAABiDfpRDTFl_dIBc4b1AkWW1zfGXrm_oNPmG_DruZ9xR5yQ
+    secure: pypi-AgEIcHlwaS5vcmcCJDU3NTEyNDRmLWZhNTAtNDNhMi04ZTFiLWMwYmU0YWU0YmZkOQACOXsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJzb3dlcmVzdCJdfSwgInZlcnNpb24iOiAxfQAABiApaJDuDSU6Z2NhqbbiweuqaEDnkI7dP2mAjAqa_qBmLg
   skip_cleanup: true
   on:
     branch: master
