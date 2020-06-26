@@ -75,7 +75,7 @@ class TestClient(unittest.TestCase):
         self.assertIs(default_client.timeout, None)
         methods = {'delete', 'get', 'patch', 'post', 'put'}
         self.assertEqual(default_client.methods, methods)
-        self.assertIsNone(default_client._version)
+        self.assertEqual(default_client._version, 1)
         self.assertEqual(default_client._url_path, [])
 
         request_headers = {'X-Test': 'test', 'X-Test2': 1}
