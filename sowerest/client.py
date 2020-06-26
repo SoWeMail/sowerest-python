@@ -59,7 +59,7 @@ class Client(object):
     def __init__(self,
                  host='https://api.sowemail.com',
                  request_headers=None,
-                 version=None,
+                 version=1,
                  url_path=None,
                  append_slash=False,
                  timeout=None):

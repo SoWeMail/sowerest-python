@@ -1,69 +1,39 @@
 import os
-import json
 import sowerest
 
-# host = "http://api.sowemail.com:9000"
-host = "http://api.sendgrid.com"
+host = "http://api.sowemail.com:9000"
 api_key = os.environ.get('SOWEMAIL_API_KEY')
 request_headers = {
     "Authorization": 'Bearer {}'.format(api_key)
 }
-version = 3  # we could also use client.version(3)
+version = 1
 client = sowerest.Client(host=host,
                          request_headers=request_headers,
                          version=version)
 
-# GET collectionx
-response = client.api_keys.get()
-print(response.status_code)
-print(response.headers)
-print(response.body)
-
-# POST
+# Send email
 data = {
-    "name": "My API Key",
-    "scopes": [
-        "mail.send",
-        "alerts.create",
-        "alerts.read"
+    "personalizations": [
+        {
+            "to": [
+                {
+                    "email": "fourat@sowemail.com"
+                }
+            ]
+        }
+    ],
+    "from": {
+        "email": "fourat@gmail.com"
+    },
+    "subject": "Hello from SoWeMail",
+    "content": [
+        {
+            "type": "text/plain",
+            "value": "Simple email sending example using python's sowerest library"
+        }
     ]
 }
-response = client.api_keys.post(request_body=data)
+response = client.mail.send.post(request_body=data)
 print(response.status_code)
 print(response.headers)
 print(response.body)
-json_response = json.loads(response.body)
-api_key_id = json_response['api_key_id']
-
-# GET single
-response = client.api_keys._(api_key_id).get()
-print(response.status_code)
-print(response.headers)
-print(response.body)
-
-# PATCH
-data = {
-    "name": "A New Hope"
-}
-response = client.api_keys._(api_key_id).patch(request_body=data)
-print(response.status_code)
-print(response.headers)
-print(response.body)
-
-# PUT
-data = {
-    "name": "A New Hope",
-    "scopes": [
-        "user.profile.read",
-        "user.profile.update"
-    ]
-}
-response = client.api_keys._(api_key_id).put(request_body=data)
-print(response.status_code)
-print(response.headers)
-print(response.body)
-
-# DELETE
-response = client.api_keys._(api_key_id).delete()
-print(response.status_code)
-print(response.headers)
