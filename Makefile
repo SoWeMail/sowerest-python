@@ -5,10 +5,10 @@ venv:
 	virtualenv --python=python venv
 
 install: venv
-	. venv/bin/activate; pip install -r requirements.pip
+	. venv/bin/activate; pip install -r install-requirements.pip
 
 test:
-	. venv/bin/activate; python -m unittest discover -v
+	. venv/bin/activate; pip install -r test-requirements.pip; python -m unittest discover -v
 
 clean: nopyc
 	rm -rf venv
